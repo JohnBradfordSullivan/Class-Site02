@@ -1,0 +1,129 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'TXT25';
+    src:    url('fonts/TXT25_0.2-Regular.woff') format('woff'),
+            url('fonts/TXT25_0.2-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+head {
+  background-color: #FCF4DB;
+
+}
+
+body {
+  background-color: #FCF4DB;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Shrikhand', cursive;
+  font-size: 64pt;
+  color: #743C08;
+
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Mogra', cursive;
+  color: #743C08;
+
+}
+
+.otherHalf {
+  font-size: 64pt;
+  text-align: center;
+  font-family: 'Mogra', cursive;
+  color: #743C08;
+}
+
+h4 {
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 8pt;
+  color: #743C08;
+}
+
+p {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 10pt;
+  color: #743C08;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.beach {
+    position: relative;
+    float: left;
+    width: 540px;
+    height: 50vh;
+    background-image: url(../images/beachshot2.png);
+    background-attachment: fixed;
+    background-size: 50%;
+    align-content: center;
+}
+
+.cat01 {
+    position: absolute;
+    max-width: 25%;
+    height: auto;
+    top: 500px;
+    left: 100px;
+    z-index: +1;
+    transition: left 1.5s;
+}
+
+.cat01:hover {
+    left: -100px;
+
+}
+
+.ashleyPlants {
+  animation-name: stars;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+.big {
+  font-size: 12pt;
+}
+
+g#Plants {
+  animation: plants 8s infinite;
+}
+
+g#Stars {
+  animation: stars 5s infinite;
+}
+
+@keyframes stars {
+  50% {
+    transform: scale(2.0);
+    transform: rotate(1.5deg);
+  }
+}
+
+@keyframes plants {
+  25% {
+     transform: translateX(4.5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
+
+@keyframes cat01a {
+  from {
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-200px);
+  }
+}
